@@ -3,7 +3,6 @@ var element = document.getElementById('permaCheck');
 
 function getPCurGeoData() {
     var options = {
-        enableHighAccuracy: true, 
         timeout: 10000, 
         maximumAge:120000
     };        
