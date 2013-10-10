@@ -23,11 +23,7 @@ function onPermGeoDataSuccess(position) {
     var span_date = '<span>Zeit: ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() +'</span>';      
     
     element.innerHTML = '<span><b>Success</b></span> | '+ span_date      + '<br />' +
-        'Lat: '          + position.coords.latitude          + ' | ' +
+        'Lat: '          + position.coords.latitude          + '<br />' +
         'Long: '         + position.coords.longitude         + '<br />' +
-        'Acc: '          + position.coords.accuracy          + ' | ' +
-        'Alt: '          + position.coords.altitude          + ' | ' +
-        'Alt Acc: '      + position.coords.altitudeAccuracy  + '<br />' +
-        'Heading: '      + position.coords.heading           + '|' +
-        'Speed: '        + position.coords.speed             + '<br><hr>'+ element.innerHTML;
+        'Acc: '          + position.coords.accuracy          + '<br><hr>'+ element.innerHTML;
 }
