@@ -2,12 +2,8 @@ var pWatchId;
 var element = document.getElementById('permaCheck');
 
 function getPCurGeoData() {
-    var options = {
-        timeout: 10000, 
-        maximumAge:120000
-    };        
     
-    pWatchId = navigator.geolocation.watchPosition(onPermGeoDataSuccess, getPCurGeoError, options);
+    pWatchId = navigator.geolocation.watchPosition(onPermGeoDataSuccess, getPCurGeoError);
 }
     
 function getPCurGeoError(error) {
