@@ -3,7 +3,7 @@ var element = document.getElementById('permaCheck');
 
 function getPCurGeoData() {
     var options = {
-        enableHighAccuracy: false, 
+        enableHighAccuracy: true, 
         timeout: 10000, 
         maximumAge:120000
     };        
@@ -15,22 +15,8 @@ function getPCurGeoError(error) {
     var d = new Date();
     var span_date = '<span>Zeit: ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + '</span> '; 
     
-//    element.innerHTML = '<span><b>Error</b></span> '+ span_date + '<br><hr>'+ element.innerHTML;
+    element.innerHTML = '<span><b>Error</b></span> '+ span_date + '<br><span>Errorcode: '+ error.code +', Message '+ error.message +'</span><br><hr>'+ element.innerHTML;
     
-    switch (error.code) {
-        case error.PERMISSION_DENIED:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>User denied the request for Geolocation.<br><hr>"+ element.innerHTML;
-            break;
-        case error.POSITION_UNAVAILABLE:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>Location information is unavailable..<br><hr>"+ element.innerHTML;
-            break;
-        case error.TIMEOUT:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>The request to get user location timed out.<br><hr>"+ element.innerHTML;
-            break;
-        case error.UNKNOWN_ERROR:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>An unknown error occurred.<br><hr>"+ element.innerHTML;
-            break;
-    }
     
 }   
     
