@@ -2,7 +2,7 @@ var pWatchId;
 var element = document.getElementById('permaCheck');
 
 function timer() {
-    window.setInterval("getPCurGeoData()", 5000);       
+    var active = window.setInterval("getPCurGeoData()", 5000);       
 }
 
 function getPCurGeoData() {
