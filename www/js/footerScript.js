@@ -11,7 +11,7 @@ function getPCurGeoData() {
         timeout: 10000
     };        
     
-    pWatchId = navigator.geolocation.getCurrentPosition(onPermGeoDataSuccess, getPCurGeoError, options);
+    pWatchId = navigator.geolocation.watchPosition(onPermGeoDataSuccess, getPCurGeoError, options);
      
 }
     
