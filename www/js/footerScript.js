@@ -8,8 +8,7 @@ function timer() {
 function getPCurGeoData() {
     var options = {
         enableHighAccuracy: true,
-        timeout: 10000, 
-        maximumAge: 120000
+        timeout: 10000
     };        
     
     pWatchId = navigator.geolocation.getCurrentPosition(onPermGeoDataSuccess, getPCurGeoError, options);
