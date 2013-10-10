@@ -15,7 +15,7 @@ function getPCurGeoError(error) {
     var d = new Date();
     var span_date = '<span>Zeit: ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + '</span> '; 
     
-    element.innerHTML = '<span><b>Error</b></span> '+ span_date + '<br><span>Errorcode: '+ error.code +', Message '+ error.message +'</span><br><hr>'+ element.innerHTML;
+    element.innerHTML = '<span><b>Error</b></span> '+ span_date + '<br><span>Errorcode: '+ error.code +'<br>Message: '+ error.message +'</span><br><hr>'+ element.innerHTML;
     
     
 }   
