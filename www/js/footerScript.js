@@ -19,16 +19,16 @@ function getPCurGeoError(error) {
     
     switch (error.code) {
         case error.PERMISSION_DENIED:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>User denied the request for Geolocation.<br><hr>";
+            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>User denied the request for Geolocation.<br><hr>"+ element.innerHTML;
             break;
         case error.POSITION_UNAVAILABLE:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>Location information is unavailable..<br><hr>";
+            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>Location information is unavailable..<br><hr>"+ element.innerHTML;
             break;
         case error.TIMEOUT:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>The request to get user location timed out.<br><hr>";
+            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>The request to get user location timed out.<br><hr>"+ element.innerHTML;
             break;
         case error.UNKNOWN_ERROR:
-            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>An unknown error occurred.<br><hr>";
+            element.innerHTML = "<span><b>Error</b></span> "+ span_date + "<br>An unknown error occurred.<br><hr>"+ element.innerHTML;
             break;
     }
     
