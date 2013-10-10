@@ -6,7 +6,7 @@
         id        = "com.idsolutions.ids-matool"
         version   = "1.0.0">
 
-    <name>Mungos Active</name>
+    <name>Geolocation</name>
 
     <description>
         Wachdienst, Einstiegshilfe, Meldungen
